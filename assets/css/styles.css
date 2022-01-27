@@ -19,40 +19,101 @@
 }
 
 .dot {
-    filter: blur(40px);
+    filter: blur(90px);
     position: absolute;
     top: 0;
     left: 0;
-    width: 200px;
-    height: 200px;
+    width: 900px;
+    height: 900px;
     background: var(--primary-200);
-    border-radius: 50%;
+    border-radius: 100%;
+    z-index: -1;
 }
 
 .sun {
-    width: 180px;
-    height: 180px;
+    width: 850px;
+    height: 850px;
     position: absolute;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
     -webkit-animation-name: orbit;
-    -webkit-animation-duration: 10s;
-    top: 50px;
-    left: 50px;
+    -webkit-animation-duration: 5s;
+    top: 600px;
+    left: 600px;
+    z-index: -1;
 }
 
-/* .dot-secundary {
-    filter: blur(150px);
+.dot-secundary_500 {
+    filter: blur(50px);
     position: absolute;
     top: 0;
     left: 0;
-    width: 500px;
-    height: 500px;
+    width: 700px;
+    height: 700px;
     background: var(--secundary-500);
-    border-radius: 30%;
-} */
+    border-radius: 100%;
+}
 
+.sun-secundary_500 {
+    width: 650px;
+    height: 650px;
+    position: absolute;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: orbit;
+    -webkit-animation-duration: 5s;
+    top: 1500px;
+    left: -400px;
+    z-index: -1;
+}
 
+.dot-secundary_600 {
+    filter: blur(70px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 800px;
+    height: 800px;
+    background: var(--secundary-600);
+    border-radius: 100%;
+}
+
+.sun-secundary_600 {
+    width: 750px;
+    height: 750px;
+    position: absolute;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: orbit;
+    -webkit-animation-duration: 5s;
+    top: 2500px;
+    left: -200px;
+    z-index: -1;
+}
+
+.dot-secundary_700 {
+    filter: blur(70px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 800px;
+    height: 800px;
+    background: var(--secundary-700);
+    border-radius: 100%;
+}
+
+.sun-secundary_700 {
+    width: 750px;
+    height: 750px;
+    position: absolute;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: orbit;
+    -webkit-animation-duration: 5s;
+    top: 3300px;
+    left: 800px;
+    z-index: -1;
+}
 
 @-webkit-keyframes orbit {
     from {
@@ -83,4 +144,5 @@ body {
 
 .font-secundary {
     font-family: "canelalight", "Noto Sans", sans-serif;
+    font-weight: 100;
 }
