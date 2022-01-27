@@ -1,0 +1,86 @@
+:root {
+    --white: #fff;
+    --black: #000000;
+    --primary-200: #474FFF;
+    --secundary-500: #DBFFBF;
+    --secundary-600: #FF6B00;
+    --secundary-700: #EBBFFF;
+
+    --wrapper: 90rem;
+    /* 1440px */
+    /* 1400px - ancho maximo del contenido*/
+    --wrapper-padding: 1.5rem;
+    /* 24px */
+    /* 24px - padding (margenes internos, es decir, cuenta desde dentro del elementp) por defecto */
+    --breakpoint-main: 52.5em;
+    /* 840px */
+    /* 840px - salto de responsive */
+    --section-padding: 4rem;
+}
+
+.dot {
+    filter: blur(40px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: var(--primary-200);
+    border-radius: 50%;
+}
+
+.sun {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: orbit;
+    -webkit-animation-duration: 10s;
+    top: 50px;
+    left: 50px;
+}
+
+/* .dot-secundary {
+    filter: blur(150px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 500px;
+    background: var(--secundary-500);
+    border-radius: 30%;
+} */
+
+
+
+@-webkit-keyframes orbit {
+    from {
+        -webkit-transform: rotate(-100deg) scale(2)
+    }
+
+    to {
+        -webkit-transform: rotate(360deg) scale(2)
+    }
+}
+
+
+@font-face {
+    font-family: "CanelaLight";
+    src: local(CanelaLight),
+        url("/assets/fonts/CanelaLight.woff2"),
+        url("/assets/fonts/CanelaLight.woff");
+    font-weight: 100;
+    font-display: swap;
+    font-style: normal;
+}
+
+body {
+    background-color: rgb(230, 227, 220);
+    font-family: "work sans";
+    font-weight: 200;
+}
+
+.font-secundary {
+    font-family: "canelalight", "Noto Sans", sans-serif;
+}
