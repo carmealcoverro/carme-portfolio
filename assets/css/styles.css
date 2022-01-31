@@ -1,6 +1,7 @@
 :root {
     --white: #fff;
     --black: #000000;
+    --background: #E6E3DC;
     --primary-200: #474FFF;
     --secundary-500: #DBFFBF;
     --secundary-600: #FF6B00;
@@ -9,13 +10,82 @@
     --wrapper: 90rem;
     /* 1440px */
     /* 1400px - ancho maximo del contenido*/
-    --wrapper-padding: 1.5rem;
+    --wrapper-padding: 6.9rem;
     /* 24px */
     /* 24px - padding (margenes internos, es decir, cuenta desde dentro del elementp) por defecto */
     --breakpoint-main: 52.5em;
     /* 840px */
     /* 840px - salto de responsive */
     --section-padding: 4rem;
+}
+
+html {
+    padding: 0 var(--wrapper-padding);
+    background-color: rgb(230, 227, 220);
+    font-family: "work sans";
+    font-weight: 200;
+    font-size: 16px;
+}
+
+h1>span {
+    font-family: "canelalight", serif;
+    font-weight: 100;
+    font-size: 6.65rem;
+    color: var(--white);
+}
+
+h2 {
+    font-family: "work sans", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+    font-size: 5.65rem;
+}
+
+h2>span {
+    font-family: "canelalight", serif;
+    font-weight: 100;
+    font-size: 6.65rem;
+    color: var(--white);
+    /* line-height: 1.1; */
+}
+
+h3 {
+    font-family: "work sans", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+    font-size: 4rem;
+    color: var(--white);
+}
+
+h3>span {
+    font-family: "canelalight", serif;
+    font-weight: 100;
+    font-size: 4rem;
+    color: var(--white);
+}
+
+h4 {
+    font-family: "work sans", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+    font-size: 2.82rem;
+    color: var(--white);
+}
+
+h4>span {
+    font-family: "canelalight", serif;
+    font-weight: 100;
+    font-size: 2.82rem;
+    color: var(--white);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.serif-bodylarge {
+    font-family: "canelalight", serif;
+    font-weight: 100;
+    font-size: 1.41rem;
+    color: var(--black);
 }
 
 .dot {
@@ -34,10 +104,10 @@
     width: 850px;
     height: 850px;
     position: absolute;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-name: orbit;
-    -webkit-animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: orbit;
+    animation-duration: 5s;
     top: 600px;
     left: 600px;
     z-index: -1;
@@ -58,10 +128,10 @@
     width: 650px;
     height: 650px;
     position: absolute;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-name: orbit;
-    -webkit-animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: orbit;
+    animation-duration: 5s;
     top: 1500px;
     left: -400px;
     z-index: -1;
@@ -82,10 +152,10 @@
     width: 750px;
     height: 750px;
     position: absolute;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-name: orbit;
-    -webkit-animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: orbit;
+    animation-duration: 5s;
     top: 2500px;
     left: -200px;
     z-index: -1;
@@ -106,22 +176,26 @@
     width: 750px;
     height: 750px;
     position: absolute;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-name: orbit;
-    -webkit-animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: orbit;
+    animation-duration: 5s;
     top: 3300px;
     left: 800px;
     z-index: -1;
 }
 
-@-webkit-keyframes orbit {
-    from {
-        -webkit-transform: rotate(0deg) scale(2)
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg) scale(1.8)
     }
 
-    to {
-        -webkit-transform: rotate(360deg) scale(2)
+    50% {
+        transform: rotate(180deg) scale(2)
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1.8)
     }
 }
 
@@ -136,13 +210,71 @@
     font-style: normal;
 }
 
-body {
-    background-color: rgb(230, 227, 220);
-    font-family: "work sans";
-    font-weight: 200;
+* {
+    scroll-behavior: smooth;
 }
 
-.font-secundary {
-    font-family: "canelalight", "Noto Sans", sans-serif;
-    font-weight: 100;
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    background: linear-gradient(to bottom, #E6E3DC, #FF6B00);
+}
+
+nav>ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px
+}
+
+li {
+    list-style-type: none;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#projects,
+#contact {
+    justify-content: end;
+    text-align: end;
+    padding: 0 calc(var(--wrapper-padding) / 2);
+
+}
+
+#main {
+    padding: 0 calc(var(--wrapper-padding) / 1);
+}
+
+#about {
+    padding: 0 calc(var(--wrapper-padding) / 1.5);
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: var(--white);
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--white);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
