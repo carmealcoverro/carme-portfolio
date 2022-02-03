@@ -270,11 +270,22 @@ section {
     align-items: center;
 }
 
-#projects li {
-    margin: 3rem 0;
+.projects ul {
+    display: grid;
+    gap: 3rem;
+    margin: 0;
+    padding: 0;
 }
 
-#projects,
+.projects ul:hover li {
+    opacity: 0.2;
+}
+
+.projects ul li:hover {
+    opacity: 1;
+}
+
+.projects,
 #contact {
     justify-content: end;
     text-align: end;
