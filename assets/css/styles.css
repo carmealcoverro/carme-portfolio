@@ -10,7 +10,7 @@
     --wrapper: 90rem;
     /* 1440px */
     /* 1400px - ancho maximo del contenido*/
-    --wrapper-padding: 6.9rem;
+    --wrapper-padding: 10rem;
     /* 24px */
     /* 24px - padding (margenes internos, es decir, cuenta desde dentro del elementp) por defecto */
     --breakpoint-main: 52.5em;
@@ -65,7 +65,7 @@ h4 {
     color: var(--white);
 }
 
-h4 > span {
+h4>span {
     font-family: "canelalight", serif;
     font-weight: 100;
     font-size: 2.82rem;
@@ -237,7 +237,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
     position: fixed;
     background-color: #e6e3dc;
     padding: 0 var(--wrapper-padding);
@@ -247,13 +247,35 @@ nav:after {
     content: "";
     top: 100%;
     width: 100%;
-    height: 5rem;
+    height: 18.25rem;
     background: linear-gradient(to bottom, #e6e3dc, #ff6a0000);
     position: absolute;
     left: 0;
 }
 
-nav > ul {
+*/ nav {
+    width: calc(100% - var(--wrapper-padding) * 2);
+    height: 20rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background: linear-gradient(to bottom, #e6e3dc, #ff6a0000);
+    padding: 0 var(--wrapper-padding);
+}
+
+/* nav:after {
+    content: "";
+    top: 100%;
+    width: 100%;
+    height: 18.25rem;
+
+    position: absolute;
+    left: 0;
+} */
+
+nav>ul {
     display: flex;
     flex-direction: row;
     align-items: right;
