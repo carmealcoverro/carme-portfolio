@@ -20,14 +20,21 @@
 }
 
 html {
-    padding: 0 var(--wrapper-padding);
     background-color: rgb(230, 227, 220);
     font-family: "work sans";
     font-weight: 200;
     font-size: 16px;
 }
 
-h1>span {
+main {
+    padding: 0 var(--wrapper-padding);
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
     font-family: "canelalight", serif;
     font-weight: 100;
     font-size: 6.65rem;
@@ -35,12 +42,6 @@ h1>span {
 }
 
 h2 {
-    font-family: "work sans", Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 200;
-    font-size: 5.65rem;
-}
-
-h2>span {
     font-family: "canelalight", serif;
     font-weight: 100;
     font-size: 6.65rem;
@@ -49,13 +50,6 @@ h2>span {
 }
 
 h3 {
-    font-family: "work sans", Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 200;
-    font-size: 4rem;
-    color: var(--white);
-}
-
-h3>span {
     font-family: "canelalight", serif;
     font-weight: 100;
     font-size: 4rem;
@@ -76,6 +70,13 @@ h4>span {
     color: var(--white);
 }
 
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -86,6 +87,12 @@ a {
     font-weight: 100;
     font-size: 1.41rem;
     color: var(--black);
+}
+
+.serif {
+    font-family: "canelalight", serif;
+    font-weight: 100;
+    color: var(--white);
 }
 
 .dot {
@@ -215,18 +222,32 @@ a {
 }
 
 nav {
-    width: 100%;
+    width: calc(100% - var(--wrapper-padding) * 2);
+    height: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
-    background: linear-gradient(to bottom, #E6E3DC, #FF6B00);
+    background-color: #E6E3DC;
+    padding: 0 var(--wrapper-padding);
+}
+
+nav:after {
+    content: "";
+    top: 100%;
+    width: 100%;
+    height: 5rem;
+    background: linear-gradient(to bottom, #E6E3DC, #ff6a0000);
+    position: absolute;
+    left: 0;
 }
 
 nav>ul {
     display: flex;
     flex-direction: row;
-    gap: 10px
+    align-items: right;
+    gap: 80px
 }
 
 li {
@@ -239,6 +260,10 @@ section {
     align-items: center;
 }
 
+#projects li {
+    margin: 3rem 0;
+}
+
 #projects,
 #contact {
     justify-content: end;
@@ -249,6 +274,10 @@ section {
 
 #main {
     padding: 0 calc(var(--wrapper-padding) / 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 #about {
