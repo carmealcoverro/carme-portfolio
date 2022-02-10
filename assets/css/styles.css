@@ -1,6 +1,7 @@
 :root {
     --white: #fff;
     --black: #000000;
+    --grey: rgba(0, 0, 0, 0, 8);
     --background: #e6e3dc;
     --primary-200: #474fff;
     --secundary-500: #dbffbf;
@@ -37,6 +38,15 @@ body {
     margin: 0;
 }
 
+* {
+    color: #fff;
+    text-decoration: none;
+}
+
+.typewrite .wrap {
+    border: 0 !important;
+}
+
 h1 {
     font-family: "canelalight", serif;
     font-weight: 100;
@@ -48,7 +58,7 @@ h2 {
     font-family: "canelalight", serif;
     font-weight: 100;
     font-size: 7.27rem;
-    color: var(--white);
+    color: var(--black);
     /* line-height: 1.1; */
 }
 
@@ -66,7 +76,7 @@ h4 {
     color: var(--white);
 }
 
-h4 > span {
+h4>span {
     font-family: "canelalight", serif;
     font-weight: 100;
     font-size: 3.76rem;
@@ -88,8 +98,15 @@ a {
 .serif-bodylarge {
     font-family: "canelalight", serif;
     font-weight: 100;
-    font-size: 2.03rem;
-    color: var(--black);
+    font-size: 1.41rem;
+    color: var(--white);
+}
+
+.serif-bodylarge-sans {
+    font-family: "work sans", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    font-size: 2.62rem;
+    color: var(--white);
 }
 
 .serif {
@@ -113,7 +130,7 @@ a {
 
 nav {
     width: 100%;
-    height: 13rem;
+    height: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -123,7 +140,7 @@ nav {
     padding: 3rem 5rem;
 }
 
-nav > ul {
+nav>ul {
     display: flex;
     flex-direction: row;
     align-items: right;
@@ -174,12 +191,20 @@ section {
 
 .about {
     padding: 0 calc(var(--wrapper-padding) / 1.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hover-nav-animation {
+    color: var(--black);
 }
 
 .hover-underline-animation {
     display: inline-block;
     position: relative;
-    color: var(--white);
+    color: var(--black);
 }
 
 .hover-underline-animation:after {
@@ -190,7 +215,7 @@ section {
     height: 3px;
     bottom: 1rem;
     left: 0;
-    background-color: var(--white);
+    background-color: var(--black);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -239,23 +264,23 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    width: 700px;
-    height: 700px;
+    width: 800px;
+    height: 800px;
     background: var(--primary-200);
     border-radius: 100%;
     z-index: -1;
 }
 
 .sun {
-    width: 670px;
-    height: 670px;
+    width: 750px;
+    height: 750px;
     position: absolute;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: orbit;
     animation-duration: 10s;
     top: 400px;
-    left: 200px;
+    left: 300px;
     z-index: -1;
 }
 
@@ -264,22 +289,22 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    width: 700px;
-    height: 700px;
+    width: 650px;
+    height: 650px;
     background: var(--secundary-500);
     border-radius: 100%;
 }
 
 .sun-secundary_500 {
-    width: 650px;
-    height: 650px;
+    width: 625px;
+    height: 625px;
     position: absolute;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: orbit;
     animation-duration: 5s;
-    top: 1500px;
-    left: -400px;
+    top: 1050px;
+    left: 1000px;
     z-index: -1;
 }
 
@@ -288,22 +313,22 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    width: 800px;
-    height: 800px;
+    width: 600px;
+    height: 600px;
     background: var(--secundary-600);
     border-radius: 100%;
 }
 
 .sun-secundary_600 {
-    width: 750px;
-    height: 750px;
+    width: 550px;
+    height: 550px;
     position: absolute;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: orbit;
     animation-duration: 5s;
-    top: 2500px;
-    left: -200px;
+    top: 2200px;
+    left: 100px;
     z-index: -1;
 }
 
