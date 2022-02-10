@@ -29,7 +29,6 @@ html {
     overflow-x: hidden;
 }
 
-
 main {
     padding: 0 var(--wrapper-padding);
 }
@@ -67,7 +66,7 @@ h4 {
     color: var(--white);
 }
 
-h4>span {
+h4 > span {
     font-family: "canelalight", serif;
     font-weight: 100;
     font-size: 3.76rem;
@@ -124,7 +123,7 @@ nav {
     padding: 3rem 5rem;
 }
 
-nav>ul {
+nav > ul {
     display: flex;
     flex-direction: row;
     align-items: right;
@@ -148,12 +147,14 @@ section {
     padding: 0;
 }
 
-.projects ul:hover li {
-    opacity: 0.2;
+.projects__item {
+    opacity: 1;
+    transition: opacity 0.25s ease-in-out;
+    will-change: opacity;
 }
 
-.projects ul li:hover {
-    opacity: 1;
+.projects__item.dimmed {
+    opacity: 0.2;
 }
 
 .projects,
