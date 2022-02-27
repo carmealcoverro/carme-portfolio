@@ -14,10 +14,15 @@
     --wrapper-padding: 10rem;
     /* 24px */
     /* 24px - padding (margenes internos, es decir, cuenta desde dentro del elementp) por defecto */
-    --breakpoint-main: 52.5em;
+
+    /* --breakpoint-main: 52.5em;
     /* 840px */
     /* 840px - salto de responsive */
+
     --section-padding: 4rem;
+
+    --mobile-breakpoint: 700px;
+
 }
 
 html {
@@ -31,11 +36,14 @@ html {
 }
 
 main {
+    width: min(calc(1200px + var(--wrapper-padding)), 100vw);
+    margin: auto;
     padding: 0 var(--wrapper-padding);
 }
 
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 
 body>span {
@@ -45,6 +53,7 @@ body>span {
 }
 
 * {
+    scroll-behavior: smooth;
     color: #fff;
     text-decoration: none;
 }
@@ -152,10 +161,6 @@ a {
     font-style: normal;
 }
 
-* {
-    scroll-behavior: smooth;
-}
-
 nav {
     width: 100%;
     height: 10rem;
@@ -186,15 +191,34 @@ section {
 }
 
 footer {
+    position: absolute;
+    bottom: 0;
     width: 100%;
     height: 10rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    position: fixed;
-    background: linear-gradient(to bottom, #e6e3dc, #ff6a0000);
+    background: linear-gradient(to top, #e6e3dc, #ff6a0000);
     padding: 3rem 5rem;
+}
+
+footer * {
+
+    color: black;
+
+}
+
+.projects {
+    position: relative;
+}
+
+.projects img {
+    position: absolute;
+    height: 85vh;
+    top: calc(50% + 30px);
+    left: 0;
+    transform: translate(-50%, -50%);
 }
 
 .projects ul {
@@ -229,6 +253,10 @@ footer {
     align-items: flex-start;
 }
 
+.main>div {
+    position: relative;
+}
+
 .about {
     padding: 0 calc(var(--wrapper-padding) / 1.5);
     width: 50rem;
@@ -245,6 +273,16 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+}
+
+.scroll_down {
+    width: 200px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: -70px;
+    right: -30vw;
 }
 
 .hover-nav-animation {
@@ -310,27 +348,27 @@ footer {
 }
 
 .dot {
-    filter: blur(90px);
+    filter: blur(3vw);
     position: absolute;
     top: 0;
     left: 0;
-    width: 800px;
-    height: 800px;
+    width: max(37vw, 800px);
+    height: max(37vw, 800px);
     background: var(--primary-200);
     border-radius: 100%;
     z-index: -1;
 }
 
 .sun {
-    width: 750px;
-    height: 750px;
+    width: max(35vw, 750px);
+    height: max(35vw, 750px);
     position: absolute;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: orbit;
     animation-duration: 10s;
-    top: 400px;
-    left: 300px;
+    top: 12vw;
+    left: 10vw;
     z-index: -1;
 }
 
@@ -354,7 +392,7 @@ footer {
     animation-name: orbit;
     animation-duration: 5s;
     top: 1050px;
-    left: 1000px;
+    right: 100px;
     z-index: -1;
 }
 
@@ -417,5 +455,148 @@ footer {
 
     100% {
         transform: rotate(360deg) scale(1.8);
+    }
+}
+
+@media (max-width: 750px) {
+    :root {
+        --wrapper-padding: 3rem;
+    }
+
+    nav>ul {
+        display: none;
+    }
+
+    html,
+    body>span {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 4.375rem;
+    }
+
+    h2 {
+        font-size: 3.125rem;
+    }
+
+    h3,
+    h4,
+    h4>span,
+    .serif-h4-span {
+        font-size: 2.375rem;
+    }
+
+    .serif-bodylarge {
+        font-size: 1.82rem;
+    }
+
+    .sans-bodylarge {
+        font-size: 2.22rem;
+    }
+
+    .sans-bodylarge-black {
+        font-size: 2.62rem;
+    }
+
+    .sans-bodymedium {
+        font-size: 1.32rem;
+    }
+
+    .dot {
+        filter: blur(3vw);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 655px;
+        height: 655px;
+        background: var(--primary-200);
+        border-radius: 100%;
+        z-index: -1;
+    }
+
+    .sun {
+        width: 625px;
+        height: 625px;
+        position: absolute;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-name: orbit;
+        animation-duration: 10s;
+        top: 12vw;
+        left: 10vw;
+        z-index: -1;
+    }
+
+    .dot-secundary_500 {
+        filter: blur(50px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 650px;
+        height: 650px;
+        background: var(--secundary-500);
+        border-radius: 100%;
+    }
+
+    .sun-secundary_500 {
+        width: 625px;
+        height: 625px;
+        position: absolute;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-name: orbit;
+        animation-duration: 5s;
+        top: 1050px;
+        right: 1000px;
+        z-index: -1;
+    }
+
+    .dot-secundary_600 {
+        filter: blur(70px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 600px;
+        height: 600px;
+        background: var(--secundary-600);
+        border-radius: 100%;
+    }
+
+    .sun-secundary_600 {
+        width: 580px;
+        height: 580px;
+        position: absolute;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-name: orbit;
+        animation-duration: 5s;
+        top: 2100px;
+        left: 250px;
+        z-index: -1;
+    }
+
+    .dot-secundary_700 {
+        filter: blur(70px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 800px;
+        height: 800px;
+        background: var(--secundary-700);
+        border-radius: 100%;
+    }
+
+    .sun-secundary_700 {
+        width: 750px;
+        height: 750px;
+        position: absolute;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-name: orbit;
+        animation-duration: 5s;
+        top: 3300px;
+        left: 800px;
+        z-index: -1;
     }
 }
