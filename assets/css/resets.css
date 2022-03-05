@@ -142,13 +142,13 @@ iframe {
     border: 0;
 }
 
-img {
+/* img {
     display: block;
     height: auto;
     -ms-interpolation-mode: bicubic;
     max-width: 100%;
     width: auto;
-}
+} */
 
 table {
     border-collapse: collapse;
