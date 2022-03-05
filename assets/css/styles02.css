@@ -27,14 +27,13 @@
 /* MAIN ////////////////////////////////////////////////////////// MAIN */
 
 main {
-
     margin: auto;
     padding: 0 var(--wrapper-padding);
 }
 
-.main {
+.home {
     width: min(calc(1200px + var(--wrapper-padding)), 100vw);
-    padding: 0 calc(var(--wrapper-padding) / 2);
+    padding: 0 calc(var(--wrapper-padding) / 1);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,7 +49,7 @@ main {
     align-items: flex-start;
 }
 
-.main>div {
+.home>div {
     position: relative;
 }
 
@@ -207,9 +206,9 @@ nav {
     justify-content: space-between;
     align-items: flex-start;
     position: fixed;
-
     background: linear-gradient(to bottom, #e6e3dc, #ff6a0000);
     padding: 3rem 5rem;
+    z-index: 1;
 }
 
 nav>ul {
@@ -302,7 +301,7 @@ section {
     align-items: center;
 }
 
-img {
+.shadow_img {
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222);
 }
@@ -313,7 +312,7 @@ img {
     display: flex;
     justify-content: space-around;
     gap: 5rem;
-    /* margin-top: 10rem; */
+    margin-top: 10rem;
 }
 
 .project__slide img {
@@ -527,18 +526,26 @@ footer * {
         --wrapper-padding: 3rem;
     }
 
-    .main {
-        padding: 0 calc(var(--wrapper-padding) / 0);
+    .home {
+        padding: 0 (var(--wrapper-padding));
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
     }
 
+    .div_br {
+        margin-top: 1.5rem;
+    }
+
     /* NAV MOBILE //////////////////////////////////////////// NAV MOBILE */
 
     nav>ul {
         display: none;
+    }
+
+    .typewrite-span {
+        display: block;
     }
 
     nav {
@@ -597,12 +604,24 @@ footer * {
     /* PROJECTS MOBILE /////////////////////////////////// PROJECTS MOBILE */
 
     .projects img {
-        position: absolute;
+        position: relative;
         height: 30vh;
         top: calc(50% + 30px);
         left: 0;
         transform: translate(-50%, -50%);
     }
+
+    /* 100vh altura de la pantalla que es veu
+    100 vw
+    v viewport
+    h height
+    w width
+    
+    transoform: translate- mou el punt desde on agafes l'objecte, -50%,-50% mous des de el centre del objecte
+
+    top: objecte, dins del seu pare relatiu, en aquest cas, section, el posiciono al mitat de la pantalla i li suma 30px
+    
+    */
 
     section {
         height: 100vh;
