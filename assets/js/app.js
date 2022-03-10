@@ -58,10 +58,24 @@ window.onload = function () {
 
 $(document).ready(function () {
     $(".js-project").on("mouseenter", function () {
-        $(this).siblings().addClass("dimmed");
+        if (window.screen.width > 750)
+            $(this).siblings().addClass("dimmed");
     });
 
     $(".js-project").on("mouseleave", function () {
-        $(".js-project").removeClass("dimmed");
+        if (window.screen.width > 750)
+            $(".js-project").removeClass("dimmed");
+    });
+
+    $(".hover-underline-animation-multiline").on("mouseenter", function () {
+        let e = document.querySelector(".hover-underline-animation-multiline")
+        if (window.screen.width > 750)
+            e.classList.add("hover-underline-animation-multiline-on")
+    });
+
+    $(".hover-underline-animation-multiline").on("mouseleave", function () {
+        let e = document.querySelector(".hover-underline-animation-multiline")
+        if (window.screen.width > 750)
+            e.classList.remove("hover-underline-animation-multiline-on")
     });
 });

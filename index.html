@@ -18,15 +18,16 @@
 
 <body>
     <header>
-        <nav>
-            <a href="../index.html" class="serif-bodylarge hover-nav-animation">carme
-                alcoverro</a>
-            <ul>
-                <li><a href="#projects" class="hover-underline-animation-nav sans-bodymedium">projects</a></li>
-                <li><a href="#about" class="hover-underline-animation-nav sans-bodymedium">about</a></li>
-                <li><a href="#contact" class="hover-underline-animation-nav sans-bodymedium">contact</a></li>
-            </ul>
-        </nav>
+        <div class="nav_shadow">
+            <nav>
+                <a href="../index.html" class="serif-bodylarge hover-nav-animation">carme alcoverro</a>
+                <ul>
+                    <li><a href="#projects" class="hover-underline-animation-nav sans-bodymedium">projects</a></li>
+                    <li><a href="#about" class="hover-underline-animation-nav sans-bodymedium">about</a></li>
+                    <li><a href="#contact" class="hover-underline-animation-nav sans-bodymedium">contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -35,33 +36,44 @@
             <h3>hello! i'm</h3>
             <div>
                 <h1>carme<br>alcoverro</h1>
-
-                <h4 class="div_br">not only a <span class="typewrite-span"><a href="" class="typewrite"
-                            data-period="2000"
+                <h4 class="div_br">not only a
+                    <span class="typewrite-span">
+                        <a href="" class="typewrite" data-period="2000"
                             data-type='[ "graphic designer", "ux designer", "ui designer", "ceramist", "analog photographer", "foodie" ]'>
                             <span class="wrap"></span>
-                        </a></span></h4>
+                        </a>
+                    </span>
+                </h4>
             </div>
-
-            <a href="#projects">
+            <a href="#projects" class="scroll_down__mobile">
                 <div class="scroll_down">
-                    <img src="/assets/img/Scroll_down.svg" alt="arrow scroll down">
-                    <a href="#projects" class="sans-bodymedium">scroll down</a>
+                    <img src="/assets/img/Scroll_down_mobile.png" alt="arrow scroll down">
+                    <p class="sans-bodymedium">scroll down</p>
                 </div>
             </a>
-
+            <a href="#projects" class="scroll_down__desktop">
+                <div class="scroll_down">
+                    <img src="/assets/img/Scroll_down.svg" alt="arrow scroll down">
+                    <p class="sans-bodymedium">scroll down</p>
+                </div>
+            </a>
         </section>
 
         <section id="projects" class="projects">
             <ul>
+                <!-- <li>
+                    <p class="sans-bodymedium-black">click to see my work</p>
+                </li> -->
                 <li class="projects__item js-project">
                     <a href="travel.html">
                         <h2 class="hover-underline-animation">travel beyond <span class="sans-bodylarge-black">01</span>
                         </h2>
                     </a>
                     <div class="img__mobile">
-                        <img class="" src="/assets/img/Travel_beyond-mobile-1.png" alt="mockup travel beyond mobile">
-                        <img src="/assets/img/Travel_beyond-desktop-1.png" alt="mockup travel beyond desktop">
+                        <img class="travel_mockup__mobile" src="/assets/img/Travel_beyond-mobile-1.png"
+                            alt="mockup travel beyond mobile">
+                        <img class="travel_mockup__desktop" src="/assets/img/Travel_beyond-desktop-1.png"
+                            alt="mockup travel beyond desktop">
                     </div>
                 </li>
 
@@ -71,10 +83,12 @@
                         </h2>
                     </a>
                     <div class="img__mobile">
-                        <img src="/assets/img/Travel_beyond-mobile-1.png" alt="mockup travel beyond mobile"
-                            class="shadow_img">
-                        <img src="/assets/img/Travel_beyond-mobile-2.png" alt="mockup travel beyond mobile">
-                        <img src="/assets/img/Travel_beyond-mobile-3.png" alt="mockup travel beyond mobile">
+                        <img class="succulent_mockup__mobile01" src="/assets/img/Travel_beyond-mobile-1.png"
+                            alt="mockup travel beyond mobile" class="shadow_img">
+                        <img class="succulent_mockup__mobile02" src="/assets/img/Travel_beyond-mobile-2.png"
+                            alt="mockup travel beyond mobile">
+                        <img class="succulent_mockup__mobile03" src="/assets/img/Travel_beyond-mobile-3.png"
+                            alt="mockup travel beyond mobile">
                     </div>
                 </li>
                 <li class="projects__item js-project">
@@ -83,21 +97,36 @@
                         </h2>
                     </a>
                     <div class="img__mobile">
-                        <img src="/assets/img/Travel_beyond-desktop-1.png" alt="mockup travel beyond desktop">
+                        <img class="sharetime_mockup__desktop" src="/assets/img/Travel_beyond-desktop-1.png"
+                            alt="mockup travel beyond desktop">
                     </div>
                 </li>
                 <li class="projects__item js-project">
-                    <a href="print">
-                        <h3 class="hover-underline-animation serif">my experience<br> with print <span
-                                class="sans-bodylarge-black">04</span></h3>
+                    <a href="print" class=hover-underline-animation-multiline>
+                        <h3 class="serif hover-underline-animation-multiline-child">my experience</h3>
+                        <br>
+                        <h3
+                            class="serif hover-underline-animation-multiline-child hover-underline-animation-multiline-second-child">
+                            with print <span class="sans-bodylarge-black">04</span></h3>
                     </a>
                     <div class="img__mobile">
-                        <img src="/assets/img/Travel_beyond-mobile-1.png" alt="mockup travel beyond mobile"
-                            class="shadow_img">
-                        <img src="/assets/img/Travel_beyond-mobile-2.png" alt="mockup travel beyond mobile">
-                        <img src="/assets/img/Travel_beyond-mobile-3.png" alt="mockup travel beyond mobile">
+                        <img class="print_mockup01"
+                            src="/assets/img/TRANVIES-Plantilla_frontal_instagram_departamento copia.png"
+                            alt="mockup travel beyond mobile" class="shadow_img">
+                        <img class="print_mockup02"
+                            src="/assets/img/BULLANGA-Plantilla_frontal_instagram_departamento copia.png"
+                            alt="mockup travel beyond mobile">
+                        <img class="print_mockup03"
+                            src="/assets/img/DESFETA-Plantilla_frontal_instagram_departamento copia.png"
+                            alt="mockup travel beyond mobile">
                     </div>
             </ul>
+            <div>
+                <img class="img__desktop travelbeyond__img" src="" alt="">
+                <img class="img__desktop succulent__img" src="" alt="">
+                <img class="img__desktop __img" src="" alt="">
+                <img class="img__desktop travelbeyond__img" src="" alt="">
+            </div>
 
         </section>
 
@@ -145,8 +174,16 @@
             <div class="dot-secundary_500"></div>
         </div>
 
-        <div class="sun-secundary_500_2">
-            <div class="dot-secundary_500_2"></div>
+        <div class="circle__mobile">
+            <div class="sun-secundary_501">
+                <div class="dot-secundary_501"></div>
+            </div>
+            <div class="sun-secundary_502">
+                <div class="dot-secundary_502"></div>
+            </div>
+            <div class="sun-secundary_503">
+                <div class="dot-secundary_503"></div>
+            </div>
         </div>
 
         <div class="sun-secundary_600">
