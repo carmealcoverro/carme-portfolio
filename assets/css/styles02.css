@@ -19,8 +19,6 @@
     /* 840px */
     /* 840px - salto de responsive */
 
-    --section-padding: 4rem;
-
     --mobile-breakpoint: 700px;
 }
 
@@ -83,6 +81,18 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+/* 
+.scroll_down {
+    width: 200px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: -70px;
+    right: -30vw;
+    gap: 0.5rem;
+} */
 
 .scroll_down__mobile,
 .scroll_down__desktop {
@@ -220,14 +230,16 @@ h4 {
     width: 100%;
     background: linear-gradient(to bottom, #e6e3dc, #ff6a0000);
     height: 10rem;
-    z-index: 1;
+    z-index: 2;
+    /* display: flex;
+    justify-content: center; */
     position: fixed;
 }
 
 nav {
     text-align: center;
     margin: auto;
-    width: min(100%, 1400px);
+    width: min(100%, 1600px);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -283,28 +295,27 @@ li {
     position: relative;
     display: flex;
     align-items: center;
-    padding: 5rem 0;
 }
 
-.projects img {
-    position: absolute;
-    /* height: 50vh;
-    top: calc(50% + 30px);
-    left: 5rem;
-    transform: translate(-50%, -50%); */
-}
+/* .projects img { */
+/* position: absolute; */
+/* height: 85vh; */
+/* top: calc(50% + 30px); */
+/* left: -20rem; */
+/* transform: translate(-50%, -50%); */
+/* } */
 
 .img__mobile {
     display: none;
 }
 
 .projects ul {
+    z-index: 1;
     display: grid;
     gap: 3rem;
     margin: 0;
     padding: 0;
 }
-
 
 .projects__item {
     opacity: 1;
@@ -320,12 +331,14 @@ li {
 .contact {
     justify-content: end;
     text-align: end;
-    padding: 0 calc(var(--wrapper-padding) / 2);
+    padding-left: calc(var(--wrapper-padding) / 2);
+    padding-right: calc(var(--wrapper-padding) / 2);
 }
 
 section {
-    width: min(calc(1200px + var(--wrapper-padding)), 100%);
+    width: min(calc(1600px + var(--wrapper-padding)), 100%);
     margin: auto;
+    padding-top: 3rem;
     height: clamp(400px, 100vh, 1200px);
     display: flex;
     align-items: center;
@@ -335,6 +348,33 @@ section {
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222);
 }
+
+.img__desktop_hover_animation {
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    top: 0;
+    left: calc(-1 * var(--wrapper-padding));
+    z-index: 0;
+}
+
+.relative {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.img__desktop {
+    /* display: none; */
+    position: absolute;
+    height: 80%;
+    left: calc(var(--wrapper-padding) - 50px);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
 
 /* CONCRET PROJECT ////////////////////////////////// CONCRET PROJECT */
 
@@ -407,12 +447,16 @@ section {
 /* ABOUT ////////////////////////////////////////////////////////// ABOUT */
 
 .about {
-    width: 35rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 1rem;
+    padding-left: calc(var(--wrapper-padding) / 2);
+}
+
+.about_text {
+    width: min(700px, 100%);
 }
 
 /* CONTACT ////////////////////////////////////////////////////////// CONTACT */
@@ -630,8 +674,7 @@ footer * {
 
 /* RESPONSIVE //////////////////////////////////////////// RESPONSIVE */
 
-@media (max-width: 750px) {
-
+@media (max-width: 1480px) {
     .scroll_down__mobile {
         display: block;
     }
@@ -640,6 +683,36 @@ footer * {
         display: none;
     }
 
+    .home {
+        padding: 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    h2 {
+        font-size: 4.5rem;
+    }
+
+    h3 {
+        font-size: 3.5rem;
+    }
+
+    .sans-bodylarge-black {
+        font-size: 1.8rem;
+    }
+
+    .hover-underline-animation-multiline-child:after,
+    .hover-underline-animation:after {
+        bottom: 0.5rem;
+    }
+
+
+}
+
+@media (max-width: 750px) {
+
     :root {
         --wrapper-padding: 2rem;
     }
@@ -647,7 +720,7 @@ footer * {
 
 
     .home {
-        padding: 0 (var(--wrapper-padding));
+        padding: 0 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
