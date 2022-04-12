@@ -58,13 +58,21 @@ window.onload = function () {
 
 $(document).ready(function () {
     $(".js-project").on("mouseenter", function () {
-        if (window.screen.width > 750)
+        if (window.screen.width > 750) {
             $(this).siblings().addClass("dimmed");
+            document.getElementById(`${this.dataset.project}__img`)
+                .classList
+                .add("desktop-imgs__img--on")
+        }
     });
 
     $(".js-project").on("mouseleave", function () {
-        if (window.screen.width > 750)
+        if (window.screen.width > 750) {
             $(".js-project").removeClass("dimmed");
+            document.getElementById(`${this.dataset.project}__img`)
+                .classList
+                .remove("desktop-imgs__img--on")
+        }
     });
 
     $(".hover-underline-animation-multiline").on("mouseenter", function () {

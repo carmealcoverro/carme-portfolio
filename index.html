@@ -35,11 +35,13 @@
                             data-period="2000"
                             data-type='[ "graphic designer", "ux designer", "ui designer", "ceramist", "analog photographer", "foodie" ]'><span
                                 class="wrap"></span></a></span></h4>
-            </div><a href="#projects" class="scroll_down__mobile">
+            </div>
+            <a href="#projects" class="scroll_down__mobile">
                 <div class="scroll_down"><img src="/assets/img/Scroll_down_mobile.png" alt="arrow scroll down">
                     <p class="sans-bodymedium">scroll down</p>
                 </div>
-            </a><a href="#projects" class="scroll_down__desktop">
+            </a>
+            <a href="#projects" class="scroll_down__desktop">
                 <div class="scroll_down"><img src="/assets/img/Scroll_down.svg" alt="arrow scroll down">
                     <p class="sans-bodymedium">scroll down</p>
                 </div>
@@ -47,82 +49,91 @@
         </section>
         <section id="projects" class="projects">
             <ul>
-                <li class="projects__item js-project"><a href="travel.html">
+                <li class="projects__item js-project" data-project="travelbeyond">
+                    <a href="travel.html">
                         <h2 class="hover-underline-animation">travel beyond <span class="sans-bodylarge-black">01</span>
                         </h2>
                     </a>
-                    <div class="img__mobile"><img class="travel_mockup__mobile"
-                            src="/assets/img/Travel_beyond-mobile-1.png" alt="mockup travel beyond mobile"><img
-                            class="travel_mockup__desktop" src="/assets/img/Travel_beyond-desktop-1.png"
-                            alt="mockup travel beyond desktop"></div>
+                    <div class="img__mobile">
+                        <img class="travel_mockup__mobile" src="/assets/img/Travel_beyond-mobile-1.png"
+                            alt="mockup travel beyond mobile">
+                        <img class="travel_mockup__desktop" src="/assets/img/Travel_beyond-desktop-1.png"
+                            alt="mockup travel beyond desktop">
+                    </div>
                 </li>
-                <li class="projects__item js-project"><a href="succulent.html">
+                <li class="projects__item js-project" data-project="succulent">
+                    <a href="succulent.html">
                         <h2 class="hover-underline-animation">succulent <span class="sans-bodylarge-black">02</span>
                         </h2>
                     </a>
-                    <div class="img__mobile"><img class="succulent_mockup__mobile01"
-                            src="/assets/img/Travel_beyond-mobile-1.png" alt="mockup travel beyond mobile"
-                            class="shadow_img"><img class="succulent_mockup__mobile02"
-                            src="/assets/img/Travel_beyond-mobile-2.png" alt="mockup travel beyond mobile"><img
-                            class="succulent_mockup__mobile03" src="/assets/img/Travel_beyond-mobile-3.png"
-                            alt="mockup travel beyond mobile"></div>
+                    <div class="img__mobile">
+                        <img class="succulent_mockup__mobile01" src="/assets/img/Travel_beyond-mobile-1.png"
+                            alt="mockup travel beyond mobile" class="shadow_img">
+                        <img class="succulent_mockup__mobile02" src="/assets/img/Travel_beyond-mobile-2.png"
+                            alt="mockup travel beyond mobile"><img class="succulent_mockup__mobile03"
+                            src="/assets/img/Travel_beyond-mobile-3.png" alt="mockup travel beyond mobile">
+                    </div>
                 </li>
-                <li class="projects__item js-project"><a href="sharetime.html">
+                <li class="projects__item js-project" data-project="sharetime">
+                    <a href="sharetime.html">
                         <h2 class="hover-underline-animation">sharetime <span class="sans-bodylarge-black">03</span>
                         </h2>
                     </a>
-                    <div class="img__mobile"><img class="sharetime_mockup__desktop"
-                            src="/assets/img/Travel_beyond-desktop-1.png" alt="mockup travel beyond desktop">
+                    <div class="img__mobile">
+                        <img class="sharetime_mockup__desktop" src="/assets/img/Travel_beyond-desktop-1.png"
+                            alt="mockup travel beyond desktop">
                     </div>
                 </li>
-                <li class="projects__item js-project"><a href="print" class=hover-underline-animation-multiline>
+                <li class="projects__item js-project" data-project="print">
+                    <a href="print" class=hover-underline-animation-multiline>
                         <h3 class="serif hover-underline-animation-multiline-child">my experience</h3><br>
                         <h3
                             class="serif hover-underline-animation-multiline-child hover-underline-animation-multiline-second-child">
                             with print <span class="sans-bodylarge-black">04</span></h3>
                     </a>
-                    <div class="img__mobile"><img class="print_mockup01"
+                    <div class="img__mobile">
+                        <img class="print_mockup01"
                             src="/assets/img/TRANVIES-Plantilla_frontal_instagram_departamento copia.png"
-                            alt="mockup travel beyond mobile" class="shadow_img"><img class="print_mockup02"
+                            alt="mockup travel beyond mobile" class="shadow_img">
+                        <img class="print_mockup02"
                             src="/assets/img/BULLANGA-Plantilla_frontal_instagram_departamento copia.png"
-                            alt="mockup travel beyond mobile"><img class="print_mockup03"
+                            alt="mockup travel beyond mobile">
+                        <img class="print_mockup03"
                             src="/assets/img/DESFETA-Plantilla_frontal_instagram_departamento copia.png"
-                            alt="mockup travel beyond mobile"></div>
+                            alt="mockup travel beyond mobile">
+                    </div>
+                </li>
             </ul>
-            <div class="img__desktop_hover_animation">
+            <div class="desktop-imgs">
                 <div class="relative">
-                    <!-- <img class="img__desktop travelbeyond__img" src="assets/img/Travel_beyond-desktop-1.png"
-                            alt="">--><img class="img__desktop succulent__img"
-                        src="assets/img/Travel_beyond-mobile-1.png" alt="">
-                    <!-- <img class="img__desktop sharetime__img" src="assets/img/Travel_beyond-desktop-1.png"
-                                alt="">-->
-                    <!-- <img class="img__desktop print__img"
-                                    src="assets/img/Travel_beyond-mobile-1.png" alt="">-->
+                    <img id="travelbeyond__img" class="desktop-imgs__img"
+                        src="assets/img/COVER-Travel_beyond-mobile-1.png" alt="travelbeyond img">
+                    <img id="succulent__img" class="desktop-imgs__img" src="assets/img/COVER-Travel_beyond-mobile-1.png"
+                        alt="succulent img">
+                    <img id="sharetime__img" class="desktop-imgs__img" src="assets/img/COVER-Sharetime-desktop-1.png"
+                        alt="sharetime img">
+                    <img id="print__img" class="desktop-imgs__img"
+                        src="assets/img/COVER-BULLANGA-Plantilla_frontal_instagram_departamento copia.png"
+                        alt="print img">
                 </div>
             </div>
-
         </section>
 
-        <section class="section_scroll-down">
-            <div class="scroll_down__mobile-black"><a href="#about" class="scroll_down__mobile-black">
-                    <div class="scroll_down"><img src="/assets/img/Scroll_down_mobile-black.png"
-                            alt="arrow scroll down">
-                        <p class="sans-bodymedium-black">scroll down <span class="body">to know more about me</span>
-                        </p>
-                    </div>
-        </section>
+        <a href="#about" class="scroll_down__mobile scroll_down__mobile--black">
+            <div class="scroll_down"><img src="/assets/img/Scroll_down_mobile-black.png" alt="arrow scroll down">
+                <p class="sans-bodymedium">scroll down</p>
+                <p>to know more about me</p>
+            </div>
+        </a>
 
         <section id="about" class="about">
             <div class="about_text">
-                <p>
                 <h4>hola ! soy <span>carme</span>,
                     diseñadora de <span>experiencias digitales</span> y mucho más.</h4>
-                </p>
                 <p class="sans-bodylarge">me apasiona el diseño y el arte,
                     ya que los entiendo como una forma eficaz de solucionar problemas y comunicarte con todo el
                     mundo. </p>
-                <p class="sans-bodylarge">aquí podéis ver una pincelada de mis trabajos hasta el día de hoy.
-                </p>
+                <p class="sans-bodylarge">aquí podéis ver una pincelada de mis trabajos hasta el día de hoy.</p>
             </div>
         </section>
         <section id="contact" class="contact">
@@ -136,8 +147,9 @@
                 <li>
                     <p>@ 2022 <span>carme alcoverro</span></p>
                 </li>
-                <li><a
-                        href="mailto:hello.carmealcoverro@gmail.com?subject=%C2%A1Conozc%C3%A1monos!">hello.carmealcoverro@hotmail.com</a>
+                <li>
+                    <a href="mailto:hello.carmealcoverro@gmail.com?subject=%C2%A1Conozc%C3%A1monos!">
+                        hello.carmealcoverro@hotmail.com</a>
                 </li>
 
 
