@@ -6,29 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carme Alcoverro</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Work+Sans:wght@200&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/resets.css">
     <link rel="stylesheet" href="/assets/css/styles02.css">
+    <link rel="stylesheet" href="/assets/css/hamburger.css">
 </head>
 
 <body>
     <header>
         <div class="nav_shadow">
-            <nav><a href="../index.html" class="serif-bodylarge hover-nav-animation">carme alcoverro</a>
+            <nav>
+                <a href="../index.html" class="serif-bodylarge hover-nav-animation nav-name">carme alcoverro</a>
                 <ul>
                     <li><a href="#projects" class="hover-underline-animation-nav sans-bodymedium">projects</a></li>
                     <li><a href="#about" class="hover-underline-animation-nav sans-bodymedium">about</a></li>
                     <li><a href="#contact" class="hover-underline-animation-nav sans-bodymedium">contact</a></li>
                 </ul>
+                <div class="mobile-container">
+                    <div class="hamburger-button__icon">
+                        <div class="hamburger-button"></div>
+                    </div>
+                </div>
             </nav>
+        </div>
+        <div class="hamburger">
+            <div class="menu_off"></div>
+            <div class="menu_on">
+                <ul>
+                    <li>
+                        <h3>
+                            <a href="#projects">projects</a>
+                        </h3>
+                    </li>
+                    <li>
+                        <h3><a href="#about">about</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="#contact">contact</a></h3>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
         <section id="home" class="home">
-            <h3>hello! i'm</h3>
+            <h3>hello ! i'm</h3>
             <div>
                 <h1>carme<br>alcoverro</h1>
                 <h4 class="div_br">not only a <span class="typewrite-span"><a href="" class="typewrite"
@@ -55,10 +81,8 @@
                         </h2>
                     </a>
                     <div class="img__mobile">
-                        <img class="travel_mockup__mobile" src="/assets/img/Travel_beyond-mobile-1.png"
+                        <img class="travel_mockup__mobile" src="/assets/img/COVER-Travel_beyond-mobile-1.png"
                             alt="mockup travel beyond mobile">
-                        <img class="travel_mockup__desktop" src="/assets/img/Travel_beyond-desktop-1.png"
-                            alt="mockup travel beyond desktop">
                     </div>
                 </li>
                 <li class="projects__item js-project" data-project="succulent">
@@ -67,11 +91,8 @@
                         </h2>
                     </a>
                     <div class="img__mobile">
-                        <img class="succulent_mockup__mobile01" src="/assets/img/Travel_beyond-mobile-1.png"
+                        <img class="succulent_mockup__mobile01" src="/assets/img/COVER-Succulent-mobile-1.png"
                             alt="mockup travel beyond mobile" class="shadow_img">
-                        <img class="succulent_mockup__mobile02" src="/assets/img/Travel_beyond-mobile-2.png"
-                            alt="mockup travel beyond mobile"><img class="succulent_mockup__mobile03"
-                            src="/assets/img/Travel_beyond-mobile-3.png" alt="mockup travel beyond mobile">
                     </div>
                 </li>
                 <li class="projects__item js-project" data-project="sharetime">
@@ -80,7 +101,7 @@
                         </h2>
                     </a>
                     <div class="img__mobile">
-                        <img class="sharetime_mockup__desktop" src="/assets/img/Travel_beyond-desktop-1.png"
+                        <img class="sharetime_mockup__desktop" src="/assets/img/COVER-Sharetime-mobile-1.png"
                             alt="mockup travel beyond desktop">
                     </div>
                 </li>
@@ -92,24 +113,17 @@
                             with print <span class="sans-bodylarge-black">04</span></h3>
                     </a>
                     <div class="img__mobile">
-                        <img class="print_mockup01"
-                            src="/assets/img/TRANVIES-Plantilla_frontal_instagram_departamento copia.png"
+                        <img class="print_mockup01" src="/assets/img/COVER-Print-1.png"
                             alt="mockup travel beyond mobile" class="shadow_img">
-                        <img class="print_mockup02"
-                            src="/assets/img/BULLANGA-Plantilla_frontal_instagram_departamento copia.png"
-                            alt="mockup travel beyond mobile">
-                        <img class="print_mockup03"
-                            src="/assets/img/DESFETA-Plantilla_frontal_instagram_departamento copia.png"
-                            alt="mockup travel beyond mobile">
                     </div>
                 </li>
             </ul>
             <div class="desktop-imgs">
                 <div class="relative">
                     <img id="travelbeyond__img" class="desktop-imgs__img"
-                        src="assets/img/COVER-Travel_beyond-mobile-1.png" alt="travelbeyond img">
-                    <img id="succulent__img" class="desktop-imgs__img" src="assets/img/COVER-Travel_beyond-mobile-1.png"
-                        alt="succulent img">
+                        src="assets/img/COVER-Travel_beyond-desktop-1.png" alt="travelbeyond img">
+                    <img id="succulent__img" class="desktop-imgs__img"
+                        src="assets/img/COVER-Travel_beyond-desktop-1.png" alt="succulent img">
                     <img id="sharetime__img" class="desktop-imgs__img" src="assets/img/COVER-Sharetime-desktop-1.png"
                         alt="sharetime img">
                     <img id="print__img" class="desktop-imgs__img"
@@ -138,12 +152,7 @@
         </section>
         <section id="contact" class="contact">
             <p class="serif-h4-span">¿hablamos?</p>
-            <a href="mailto:hello.carmealcoverro@gmail.com?subject=%C2%A1Conozc%C3%A1monos!"
-                class="sans-bodylarge-black hover-underline-animation-footer"
-                style="margin-top: 1rem;">hello.carmealcoverro@hotmail.com</a>
-            <a target="blank" href="https://www.linkedin.com/in/carme-alcoverro/"
-                class="sans-bodylarge-black hover-underline-animation-footer"
-                style="margin-top: 0.75rem;">linkedin.com/in/carme-alcoverro </a>
+            <p class="sans-bodylarge-black">hello.carmealcoverro@hotmail.com</p>
         </section>
     </main>
     <footer>
@@ -156,8 +165,6 @@
                     <a href="mailto:hello.carmealcoverro@gmail.com?subject=%C2%A1Conozc%C3%A1monos!">
                         hello.carmealcoverro@hotmail.com</a>
                 </li>
-
-
             </ul>
         </div>
     </footer>

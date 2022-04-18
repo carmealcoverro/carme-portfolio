@@ -336,14 +336,6 @@ li {
     padding: 13rem 0 5rem 0;
 }
 
-.projects img {
-    position: absolute;
-    /* height: 50vh;
-    top: calc(50% + 30px);
-    left: 5rem;
-    transform: translate(-50%, -50%); */
-}
-
 .img__mobile {
     display: none;
     overflow: hidden;
@@ -429,7 +421,7 @@ section {
     left: 5rem;
 }
 
-.travel_mockup__desktop {
+/* .travel_mockup__desktop {
     margin: 2rem 0;
     height: 35vh;
     left: 3rem;
@@ -463,9 +455,9 @@ section {
     margin: 3rem 0;
     height: 35vh;
     left: -15rem;
-}
+} */
 
-.print_mockup01 {
+/* .print_mockup01 {
     margin: 7rem 0;
     height: 45vh;
     left: -14rem;
@@ -481,7 +473,7 @@ section {
     margin: 3rem 0;
     height: 45vh;
     left: 14rem;
-}
+} */
 
 /* ABOUT ////////////////////////////////////////////////////////// ABOUT */
 
@@ -733,6 +725,7 @@ footer * {
     .hover-underline-animation:after {
         bottom: 0.5rem;
     }
+
 }
 
 @media (max-width: 1480px) {
@@ -793,13 +786,14 @@ footer * {
     }
 
     nav {
-        height: 10rem;
-        padding: 3rem 3rem;
+        height: auto;
+        padding: 0rem calc(var(--wrapper-padding) / 2);
         flex: none;
     }
 
     .nav_shadow {
-        display: none;
+        height: auto;
+        background-color: #00000000;
     }
 
     /* .scroll_down {
@@ -870,8 +864,12 @@ footer * {
     .projects {
         height: auto;
         margin-top: 8rem;
-        margin-bottom: 8rem;
         padding: 5rem 0 5rem 0;
+    }
+
+    .projects ul {
+        width: 100%;
+        gap: 0;
     }
 
     .projects .img__desktop {
@@ -879,14 +877,26 @@ footer * {
     }
 
     .projects .img__mobile {
-        display: block;
+        overflow: visible;
+        display: flex;
+        justify-content: center;
     }
+
+    .projects .img__mobile img {
+        width: calc(100% + 4rem);
+        height: auto;
+    }
+
 
     .hover-nav-animation {
         color: var(--black);
         display: flex;
         align-items: flex-end;
         justify-content: flex-end;
+    }
+
+    .hover-underline-animation:after {
+        display: none;
     }
 
 
@@ -914,7 +924,6 @@ footer * {
     .img__mobile {
         display: flex;
         align-items: center;
-        height: 50vh;
     }
 
     /* .travel__beyond-mobile {

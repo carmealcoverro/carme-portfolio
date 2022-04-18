@@ -86,4 +86,27 @@ $(document).ready(function () {
         if (window.screen.width > 750)
             e.classList.remove("hover-underline-animation-multiline-on")
     });
+
+    menu()
+
 });
+
+function menu() {
+    const button = document.querySelector(".hamburger-button__icon")
+    const menu = document.querySelector(".menu_on")
+    const menuItems = Array.from(document.querySelectorAll(".menu_on li"))
+
+    console.log(menuItems);
+    button.onclick = () => {
+        button.classList.toggle("hamburger-button__icon--on")
+        menu.classList.toggle("menu_on--on")
+        menuItems.forEach(e => e.onclick = () => closeMenu())
+    }
+}
+
+function closeMenu() {
+    const button = document.querySelector(".hamburger-button__icon")
+    const menu = document.querySelector(".menu_on")
+    button.classList.remove("hamburger-button__icon--on")
+    menu.classList.remove("menu_on--on")
+}

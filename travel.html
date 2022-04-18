@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carme Alcoverro</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +13,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/resets.css">
     <link rel="stylesheet" href="/assets/css/styles_projects.css">
+    <link rel="stylesheet" href="/assets/css/hamburger.css">
 </head>
 
 <body>
@@ -21,10 +23,34 @@
                 <ul>
                     <li><a href="../index.html#projects"
                             class="hover-underline-animation-nav sans-bodymedium">projects</a></li>
-                    <li><a href="#about" class="hover-underline-animation-nav sans-bodymedium">about</a></li>
+                    <li><a href="../index.html#about" class="hover-underline-animation-nav sans-bodymedium">about</a>
+                    </li>
                     <li><a href="#contact" class="hover-underline-animation-nav sans-bodymedium">contact</a></li>
                 </ul>
+                <div class="mobile-container">
+                    <div class="hamburger-button__icon">
+                        <div class="hamburger-button"></div>
+                    </div>
+                </div>
             </nav>
+        </div>
+        <div class="hamburger">
+            <div class="menu_off"></div>
+            <div class="menu_on">
+                <ul>
+                    <li>
+                        <h3>
+                            <a href="../index.html#projects">projects</a>
+                        </h3>
+                    </li>
+                    <li>
+                        <h3><a href="../index.html#about">about</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="#contact">contact</a></h3>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
 
@@ -50,7 +76,8 @@
         </div>
         <section id="description_project" class="section__wrapper destacado padding_projects ">
             <p class="serif-h4-span">reto</p>
-            <h5>Travel Beyond es un proyecto ficticio para una agencia de viajes de lujo, que ofrece la posibilidad de
+            <h5 class="sans-bodylarge-black">Travel Beyond es un proyecto ficticio para una agencia de viajes de lujo,
+                que ofrece la posibilidad de
                 salir del planeta y vivir una experiencia inolvidable en Marte.</h5>
         </section>
         <div class="description_detail section__wrapper padding_projects">
@@ -99,7 +126,7 @@
             </p>
         </div>
         <div class="section__img">
-            <div class="project__slide">
+            <div class="project__process">
                 <img class="project__img__01" src="/assets/img/Travel_beyond-proces-1.png"
                     alt="wireframes Travel Beyond">
                 <img class="project__img__02" src="/assets/img/Travel_beyond-proces-2.png"
@@ -107,7 +134,8 @@
             </div>
             <section id="description_project" class="section__wrapper destacado padding_projects ">
                 <p class="serif-h4-span">solución</p>
-                <h5>un diseño impactante, con imágenes imponentes y colores claros combinados con tonos azules
+                <h5 class="sans-bodylarge-black">un diseño impactante, con imágenes imponentes y colores claros
+                    combinados con tonos azules
                     eléctricos y un naranja acido para las llamadas a la acción.</h5>
             </section>
             <div class="section__img project__img">
@@ -124,8 +152,8 @@
                     </li>
                     <li class="projects__item js-project" data-project="succulent">
                         <a href="print.html">
-                            <h2 class="hover-underline-animation">prev project <span
-                                    class="sans-bodylarge-black">04</span>
+                            <h2 class="hover-underline-animation"><span class="sans-bodylarge-black">04</span> prev
+                                project
                             </h2>
                         </a>
                     </li>
