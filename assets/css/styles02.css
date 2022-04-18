@@ -839,14 +839,13 @@ footer * {
     .serif-bodylarge {
         font-size: 1.82rem;
     }
+.sans-bodylarge {
+    font-size: 1.38rem;
+}
 
-    .sans-bodylarge {
-        font-size: 1.68rem;
-    }
-
-    .sans-bodylarge-black {
-        font-size: 1.68rem;
-    }
+.sans-bodylarge-black {
+    font-size: 1.38rem;
+}
 
     .sans-bodymedium {
         font-size: 1.32rem;
@@ -958,22 +957,22 @@ footer * {
         position: absolute;
         top: 0;
         left: 0;
-        width: max(10vw, 330px);
-        height: max(10vw, 330px);
+        width: max(10vw, 350px);
+        height: max(10vw, 350px);
         background: var(--primary-200);
         border-radius: 100%;
         z-index: -1;
     }
 
     .sun {
-        width: max(10vw, 330px);
-        height: max(10vw, 330px);
+        width: max(10vw, 350px);
+        height: max(10vw, 350px);
         position: absolute;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
         animation-name: orbit;
         animation-duration: 10s;
-        top: 60vw;
+        top: 70vw;
         left: -20vw;
         z-index: -1;
     }
@@ -999,7 +998,7 @@ footer * {
         animation-timing-function: linear;
         animation-name: orbit;
         animation-duration: 5s;
-        top: 200vw;
+        top: 220vw;
         left: 50vw;
         z-index: -1;
     }
@@ -1089,22 +1088,22 @@ footer * {
         position: absolute;
         top: 0;
         left: 0;
-        width: max(15vw, 350px);
-        height: max(15vw, 350px);
+        width: max(15vw, 390px);
+        height: max(15vw, 390px);
         background: var(--secundary-600);
         border-radius: 100%;
     }
 
     .sun-secundary_600 {
-        width: max(10vw, 350px);
-        height: max(10vw, 350px);
+        width: max(10vw, 390px);
+        height: max(10vw, 390px);
         position: absolute;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
         animation-name: orbit;
         animation-duration: 5s;
-        top: 800vw;
-        left: -20vw;
+        top: 780vw;
+        left: -10vw;
         z-index: -1;
     }
 
@@ -1129,8 +1128,8 @@ footer * {
         animation-timing-function: linear;
         animation-name: orbit;
         animation-duration: 5s;
-        top: 2800px;
-        left: 800px;
+        top: 980vw;
+        left: 30vw;
         z-index: -1;
     }
 
