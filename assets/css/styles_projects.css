@@ -778,8 +778,128 @@ footer * {
         animation-timing-function: linear;
         animation-name: orbit;
         animation-duration: 5s;
-        top: 200vw;
+        top: 70vw;
         left: 50vw;
+        z-index: -1;
+    }
+
+    .dot-secundary_501 {
+        filter: blur(6vw);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: max(10vw, 250px);
+        height: max(10vw, 250px);
+        background: var(--secundary-500);
+        border-radius: 100%;
+    }
+
+    .sun-secundary_501 {
+        width: max(10vw, 250px);
+        height: max(10vw, 250px);
+        position: absolute;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-name: orbit;
+        animation-duration: 5s;
+        top: 220vw;
+        left: -20vw;
+        z-index: -1;
+    }
+
+    .dot-secundary_502 {
+        filter: blur(6vw);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: max(10vw, 350px);
+        height: max(10vw, 350px);
+        background: var(--secundary-500);
+        border-radius: 100%;
+    }
+
+    .sun-secundary_502 {
+        width: max(10vw, 350px);
+        height: max(10vw, 350px);
+        position: absolute;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-name: orbit;
+        animation-duration: 5s;
+        top: 420vw;
+        left: 70vw;
+        z-index: -1;
+    }
+
+    .dot-secundary_503 {
+        filter: blur(6vw);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: max(10vw, 350px);
+        height: max(10vw, 350px);
+        background: var(--secundary-500);
+        border-radius: 100%;
+    }
+
+    .sun-secundary_503 {
+        width: max(10vw, 350px);
+        height: max(10vw, 350px);
+        position: absolute;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-name: orbit;
+        animation-duration: 5s;
+        top: 620vw;
+        left: -10vw;
+        z-index: -1;
+    }
+
+    .dot-secundary_504 {
+        filter: blur(6vw);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: max(10vw, 300px);
+        height: max(10vw, 300px);
+        background: var(--secundary-500);
+        border-radius: 100%;
+    }
+
+    .sun-secundary_504 {
+        width: max(10vw, 300px);
+        height: max(10vw, 300px);
+        position: absolute;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-name: orbit;
+        animation-duration: 5s;
+        top: 920vw;
+        left: -10vw;
+        z-index: -1;
+    }
+
+    .dot-secundary_700 {
+        filter: blur(8vw);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: max(10vw, 250px);
+        height: max(10vw, 250px);
+        background: var(--secundary-700);
+        border-radius: 100%;
+    }
+
+    .sun-secundary_700 {
+        width: max(40vw, 250px);
+        height: max(40vw, 250px);
+        position: absolute;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-name: orbit;
+        animation-duration: 5s;
+        bottom: 20vw;
+        left: 30vw;
         z-index: -1;
     }
 

@@ -839,13 +839,14 @@ footer * {
     .serif-bodylarge {
         font-size: 1.82rem;
     }
-.sans-bodylarge {
-    font-size: 1.38rem;
-}
 
-.sans-bodylarge-black {
-    font-size: 1.38rem;
-}
+    .sans-bodylarge {
+        font-size: 1.38rem;
+    }
+
+    .sans-bodylarge-black {
+        font-size: 1.38rem;
+    }
 
     .sans-bodymedium {
         font-size: 1.32rem;
@@ -1128,7 +1129,7 @@ footer * {
         animation-timing-function: linear;
         animation-name: orbit;
         animation-duration: 5s;
-        top: 980vw;
+        top: 960vw;
         left: 30vw;
         z-index: -1;
     }
