@@ -52,6 +52,10 @@ section {
     padding-bottom: 1rem;
 }
 
+.process__print {
+    padding-bottom: 1rem;
+}
+
 .section__img {
     width: min(calc(1500px + var(--wrapper-padding)), 100%);
     margin: auto;
@@ -185,6 +189,7 @@ h3 {
     color: var(--white);
 }
 
+
 h4 {
     font-family: "work sans", Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 200;
@@ -199,12 +204,18 @@ h4>span {
     color: var(--white);
 }
 
+.serif-h3-span {
+    font-family: "canelalight", serif;
+    font-weight: 100;
+    font-size: 5.76rem;
+    color: var(--black);
+}
+
 .serif-h4-span {
     font-family: "canelalight", serif;
     font-weight: 100;
     font-size: 3.76rem;
     color: var(--black);
-    /* padding: 1rem; */
 }
 
 h1,
